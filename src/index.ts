@@ -1,7 +1,7 @@
 import * as ex from 'excalibur';
-import Ball from './ball';
+import Ball from './actors/Ball';
+import Paddle from './actors/Paddle';
 import game from './game';
-import Paddle from './paddle';
 
 // `game.add` is the same as calling
 // `game.currentScene.add`
