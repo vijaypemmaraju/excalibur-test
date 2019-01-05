@@ -1137,6 +1137,10 @@ evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
     md5.js "^1.3.4"
     safe-buffer "^5.1.1"
 
+excalibur@^0.20.0:
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/excalibur/-/excalibur-0.20.0.tgz#5cbaa7f3edbed6efdefe3306a5cb0e7c868de4c4"
+
 execa@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/execa/-/execa-0.10.0.tgz#ff456a8f53f90f8eccc71a96d11bdfc7f082cb50"
