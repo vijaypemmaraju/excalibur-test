@@ -1,14 +1,14 @@
 import * as ex from 'excalibur';
-import ball from './ball';
+import Ball from './ball';
 import game from './game';
-import paddle from './paddle';
+import Paddle from './paddle';
 
 // `game.add` is the same as calling
 // `game.currentScene.add`
-game.add(paddle);
+game.add(new Paddle());
 
 // Add the ball to the current scene
-game.add(ball);
+game.add(new Ball());
 
 // Start the engine to begin the game.
 game.start();
