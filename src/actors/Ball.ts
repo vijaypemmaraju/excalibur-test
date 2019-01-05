@@ -3,7 +3,7 @@ import {
   CollisionType,
   Color,
 } from 'excalibur';
-import game from './game';
+import game from '../game';
 
 class Ball extends Actor {
   constructor() {
@@ -38,6 +38,7 @@ class Ball extends Actor {
         this.vel.y *= -1;
       }
     });
+
   }
 
   public draw(ctx: any, delta: any) {
