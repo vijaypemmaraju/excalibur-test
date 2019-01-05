@@ -41,7 +41,7 @@ class Ball extends Actor {
 
   }
 
-  public draw(ctx: any, delta: any) {
+  public draw(ctx: CanvasRenderingContext2D, delta: number) {
     // Optionally call original 'base' method
     // ex.Actor.prototype.draw.call(this, ctx, delta)
 

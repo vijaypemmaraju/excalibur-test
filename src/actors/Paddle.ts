@@ -1,4 +1,4 @@
-import { Actor, CollisionType, Color } from 'excalibur';
+import { Actor, CollisionType, Color, Input } from 'excalibur';
 import game from '../game';
 
 class Paddle extends Actor {
@@ -7,7 +7,7 @@ class Paddle extends Actor {
     this.color = Color.Chartreuse;
     this.collisionType = CollisionType.Fixed;
 
-    game.input.pointers.primary.on('move', (evt: any) => {
+    game.input.pointers.primary.on('move', (evt: Input.PointerMoveEvent) => {
       this.pos.x = evt.worldPos.x;
     });
   }
