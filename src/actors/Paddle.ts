@@ -11,6 +11,5 @@ class Paddle extends Actor {
       this.pos.x = evt.worldPos.x;
     });
   }
-
 }
 export default Paddle;
