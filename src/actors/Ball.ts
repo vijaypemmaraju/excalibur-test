@@ -13,7 +13,7 @@ class Ball extends Actor {
 
     this.vel.setTo(200, 200);
 
-    this.collisionType = CollisionType.Passive;
+    // this.collisionType = CollisionType.Passive;
 
     this.on('precollision', (ev) => {
       const intersection = ev.intersection.normalize();
@@ -26,15 +26,15 @@ class Ball extends Actor {
     });
 
     this.on('postupdate', () => {
-      if (this.pos.x < this.getWidth() / 2) {
+      if (this.pos.x < this.width / 2) {
         this.vel.x *= -1;
       }
 
-      if (this.pos.x + this.getWidth() / 2 > game.drawWidth) {
+      if (this.pos.x + this.width / 2 > game.drawWidth) {
         this.vel.x *= -1;
       }
 
-      if (this.pos.y < this.getHeight() / 2) {
+      if (this.pos.y < this.height / 2) {
         this.vel.y *= -1;
       }
     });

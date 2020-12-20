@@ -1,9 +1,0 @@
-{
-  "extends": "tslint:latest",
-  "rules": {
-      "max-line-length": [true, 200],
-      "quotemark": [true, "single"],
-      "no-any": [true],
-      "no-unused-variable": true
-  }
-}

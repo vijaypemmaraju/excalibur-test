@@ -5,7 +5,7 @@ class Paddle extends Actor {
   constructor() {
     super(150, game.drawHeight - 40, 200, 20);
     this.color = Color.Chartreuse;
-    this.collisionType = CollisionType.Fixed;
+    // this.collisionType = CollisionType.Fixed;
 
     game.input.pointers.primary.on('move', (evt: Input.PointerMoveEvent) => {
       this.pos.x = evt.worldPos.x;
