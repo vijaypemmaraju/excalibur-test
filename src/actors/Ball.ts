@@ -9,8 +9,6 @@ class Ball extends Actor {
 
     this.vel.setTo(200, 200);
 
-    // this.collisionType = CollisionType.Passive;
-
     this.on('precollision', (ev) => {
       const intersection = ev.intersection.normalize();
 
